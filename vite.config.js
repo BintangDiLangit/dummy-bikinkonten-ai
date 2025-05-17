@@ -186,6 +186,8 @@ export default defineConfig({
 	plugins: [react(), addTransformIndexHtml],
 	server: {
 		cors: true,
+		port: 3033,
+    	host: '0.0.0.0',
 		headers: {
 			'Cross-Origin-Embedder-Policy': 'credentialless',
 		},
